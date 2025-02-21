@@ -8,7 +8,7 @@ This application allows users to upload PDFs, extract text, store embeddings, an
 
 *   **Python:** Programming language
 *   **LangChain:** Framework for building LLM applications
-*   **HuggingFace SentenceTransformers:**  Embedding model
+*   **HuggingFace all-MiniLM-L6-v2:**  Embedding model
 *   **PostgreSQL:** Database for storing embeddings
 *   **PgVector:** PostgreSQL extension for vector search
 *   **Streamlit:** Framework for building interactive web apps
@@ -19,7 +19,7 @@ This application allows users to upload PDFs, extract text, store embeddings, an
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/rajnishm990/chat_app.git
-    cd YOUR_REPO_NAME
+    cd chat_app
     ```
 
 2.  **Create a virtual environment (recommended):**
