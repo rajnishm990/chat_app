@@ -4,7 +4,7 @@ sqlalchemy
 langchain_community
 pypdf
 pgvector
-psycopg2
+psycopg2-binary
 python-dotenv
 supabase
 sentence-transformers  
