@@ -8,10 +8,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_HOST = os.getenv("DB_HOST", "localhost")
-DB_NAME = os.getenv("DB_NAME", "your_db_name")
-DB_USER = os.getenv("DB_USER", "your_db_user")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "your_db_password")
+DB_HOST = os.getenv("DB_HOST")
+DB_NAME = os.getenv("DB_NAME")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
 
 CONNECTION_STRING = f"postgresql://postgres.uyhpttrmsqcihuxaebhf:{DB_PASSWORD}@aws-0-us-west-1.pooler.supabase.com:5432/postgres"
 
@@ -27,7 +27,7 @@ def process_pdf(pdf_path):
     return docs
 
 def clean_text(text):
-    """Remove null bytes from the text to avoid database errors."""
+   
     return text.replace("\x00", "")
 
 def store_embeddings(docs):
