@@ -4,14 +4,15 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import PGVector
 from dotenv import load_dotenv
+import streamlit as st
 
 
 load_dotenv()
 
-DB_HOST = os.getenv("DB_HOST")
-DB_NAME = os.getenv("DB_NAME")
-DB_USER = os.getenv("DB_USER")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
+#DB_HOST = os.getenv("DB_HOST")
+#DB_NAME = os.getenv("DB_NAME")
+#DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = st.secrets["DB_PASSWORD"]
 
 CONNECTION_STRING = f"postgresql://postgres.uyhpttrmsqcihuxaebhf:{DB_PASSWORD}@aws-0-us-west-1.pooler.supabase.com:5432/postgres"
 
