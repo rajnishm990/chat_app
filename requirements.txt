@@ -1,0 +1,10 @@
+streamlit
+langchain
+sqlalchemy
+langchain_community
+pypdf
+pgvector
+psycopg2
+python-dotenv
+supabase
+sentence-transformers  
