@@ -1,6 +1,5 @@
-# README.md
 
-## AI-Powered PDF Q&A Application
+## AI-Powered PDF Q&A Chat App
 
 This application allows users to upload PDFs, extract text, store embeddings, and ask questions about the content.  It uses LangChain for PDF processing and embedding generation, PgVector for efficient vector storage in PostgreSQL, and Streamlit for the user interface.
 
@@ -51,7 +50,7 @@ This application allows users to upload PDFs, extract text, store embeddings, an
 
 # Key Architectural Decisions and Trade-offs
 
-## 1️⃣ Supabase for Database and Vector Storage
+## 1 Supabase for Database and Vector Storage
 **Decision:** Used **Supabase Postgres** with **pgvector** for storing document embeddings.
 
 **Reasoning:**  
@@ -65,7 +64,7 @@ This application allows users to upload PDFs, extract text, store embeddings, an
 
 ---
 
-## 2️⃣ Streamlit for Frontend and Deployment
+## 2️ Streamlit for Frontend and Deployment
 **Decision:** Used **Streamlit** for both the frontend and backend, skipping a separate API layer.  
 
 **Reasoning:**  
@@ -82,7 +81,7 @@ This application allows users to upload PDFs, extract text, store embeddings, an
 
 ---
 
-## 3️⃣ Hugging Face `sentence-transformers` for Embeddings
+## 3️ Hugging Face `sentence-transformers` for Embeddings
 **Decision:** Used `sentence-transformers` from Hugging Face to generate document embeddings.
 
 **Reasoning:**  
@@ -95,7 +94,7 @@ This application allows users to upload PDFs, extract text, store embeddings, an
 
 ---
 
-## 4️⃣ Deployment on Streamlit Cloud
+## 4️ Deployment on Streamlit Cloud
 **Decision:** Deployed directly on **Streamlit Community Cloud**.
 
 **Reasoning:**  
@@ -109,12 +108,12 @@ This application allows users to upload PDFs, extract text, store embeddings, an
 
 ---
 
-## 🚀 **Live Deployment**
-🔗 **[LangPDFChat - Try it here!](https://langpdfchat.streamlit.app/)**  
+##  **Live Deployment**
+🔗 **[LangPDFChat](https://langpdfchat.streamlit.app/)**  
 
 ## Conclusion
 The architecture prioritizes **ease of development, quick deployment, and minimal infrastructure overhead** while ensuring a **functional AI-powered backend**. Future improvements could involve **switching to a dedicated vector database** and optimizing model serving for faster response times.  
 
 ---
 
-💡 *Since my expertise lies in backend development, I focused on integrating AI efficiently rather than fine-tuning models. I'm eager to explore more ML techniques in future projects.*
+ *Since my expertise lies in backend development, I focused on integrating AI efficiently rather than fine-tuning models. I'm eager to explore more ML techniques in future projects.*
