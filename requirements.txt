@@ -4,7 +4,7 @@ sqlalchemy
 langchain_community
 pypdf
 pgvector
-psyocpg
+psycopg
 psycopg2-binary
 python-dotenv
 supabase
